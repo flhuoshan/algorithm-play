@@ -1,5 +1,4 @@
-import java.awt.*;
-import java.util.Arrays;
+import com.flcoder.algorithm.Utils;
 
 public class SortAlgorithm {
 
@@ -15,13 +14,7 @@ public class SortAlgorithm {
     }
 
 
-    private void printAll(int[] arr){
-        String temp = "";
-        for(int a : arr){
-            temp = temp + a;
-        }
-        System.out.println(temp);
-    }
+
 
     //反向
     private int[] bubbleSort(int[] data){
@@ -48,7 +41,7 @@ public class SortAlgorithm {
                 }
             }
 
-            printAll(data);
+            Utils.printAll(data);
         }
         return data;
     }
@@ -107,7 +100,7 @@ public class SortAlgorithm {
         // Start with a big gap, then reduce the gap
         for (int gap = n/2; gap > 0; gap /= 2)
         {
-            // Do a gapped insertion sort for this gap size.
+            // Do a gapped insertion com.flcoder.algorithm.sort for this gap size.
             // The first gap elements a[0..gap-1] are already
             // in gapped order keep adding one more element
             // until the entire array is gap sorted
