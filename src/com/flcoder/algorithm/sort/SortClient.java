@@ -3,9 +3,16 @@ import com.flcoder.algorithm.Utils;
 
 public class SortClient {
     public static void main(String[] args){
-        int length = 10000;
+        int length = 50000;
         int[] arr = Utils.generateAllRandomArray(length);
-        SortProxy proxy = new SortProxy(arr);
+        int[] arr2 = Utils.copyAnArray(arr);
+        Sorter selectSort = new SelectSort();
+        SortProxy proxy = new SortProxy(arr, selectSort);
+        proxy.measure();
+
+
+        Sorter insertSort = new InsertSort();
+        proxy = new SortProxy(arr2, insertSort);
         proxy.measure();
     }
 }

@@ -1,6 +1,7 @@
 package com.flcoder.algorithm.sort;
 import com.flcoder.algorithm.Utils;
 public class SelectSort implements Sorter {
+
     @Override
     public void sort(int[] arr) {
         for(int i=0; i<arr.length; i++){
@@ -11,7 +12,11 @@ public class SelectSort implements Sorter {
                 }
             }
             Utils.swap(arr ,i, minIndex);
-
         }
+    }
+
+    @Override
+    public String getSortName() {
+        return "选择排序";
     }
 }

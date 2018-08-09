@@ -15,7 +15,7 @@ public class Utils {
         int[] generatedArray = new int[length];
         Random random = new Random(System.currentTimeMillis());
         for(int i=0; i < length; i++){
-            generatedArray[i] = random.nextInt();
+            generatedArray[i] = random.nextInt(length);
         }
         return generatedArray;
     }
@@ -25,7 +25,7 @@ public class Utils {
         for(int a : arr){
             temp = temp + a + " ";
         }
-        System.out.print(temp);
+        System.out.println(temp);
     }
 
     public static int[] copyAnArray(int[] orgArray){
