@@ -4,15 +4,15 @@ import java.util.Random;
 
 public class Utils {
 
-    public static void swap(int arr[], int l, int r){
-        int temp = arr[l];
+    public static void swap(Comparable arr[], int l, int r){
+        Comparable temp = arr[l];
         arr[l] = arr[r];
         arr[r] = temp;
     }
 
 
-    public static int[] generateAllRandomArray(int length){
-        int[] generatedArray = new int[length];
+    public static Comparable[] generateAllRandomArray(int length){
+        Comparable[] generatedArray = new Comparable[length];
         Random random = new Random(System.currentTimeMillis());
         for(int i=0; i < length; i++){
             generatedArray[i] = random.nextInt(length);
@@ -28,8 +28,8 @@ public class Utils {
         System.out.println(temp);
     }
 
-    public static int[] copyAnArray(int[] orgArray){
-        int[] newArray = new int[orgArray.length];
+    public static Comparable[] copyAnArray(Comparable[] orgArray){
+        Comparable[] newArray = new Comparable[orgArray.length];
         System.arraycopy(orgArray, 0, newArray, 0, orgArray.length);
         return newArray;
     }

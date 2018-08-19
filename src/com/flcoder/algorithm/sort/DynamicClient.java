@@ -4,7 +4,7 @@ import com.flcoder.algorithm.Utils;
 
 public class DynamicClient {
     public static void main(String[] args){
-        int[] arr = Utils.generateAllRandomArray(10000);
+        Comparable[] arr = Utils.generateAllRandomArray(10000);
 
         Sorter target = new SelectSort();
         // 【原始的类型 class cn.itcast.b_dynamic.UserDao】

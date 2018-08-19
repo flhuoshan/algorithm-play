@@ -2,13 +2,13 @@ package com.flcoder.algorithm.sort;
 
 public class SortProxy implements Sorter{
     private Sorter sorter;
-    private int[] data;
-    public SortProxy(int[] data, Sorter sorter){
+    private Comparable[] data;
+    public SortProxy(Comparable[] data, Sorter sorter){
         this.sorter = sorter;
         this.data = data;
     }
     @Override
-    public void sort(int[] a) {
+    public void sort(Comparable[] a) {
         long startTime = System.currentTimeMillis();
         this.sorter.sort(a);
         long endTime = System.currentTimeMillis();
