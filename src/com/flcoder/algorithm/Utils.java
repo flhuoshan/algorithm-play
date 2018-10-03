@@ -20,6 +20,16 @@ public class Utils {
         return generatedArray;
     }
 
+    public static Comparable[] generateNearlyOrderedArray(int length, int unorderedSize){
+        Comparable[] generatedArray = new Comparable[length];
+        Random random = new Random(System.currentTimeMillis());
+        for(int i=0; i < length; i++){
+            generatedArray[i] = random.nextInt(length);
+        }
+
+        return generatedArray;
+    }
+
     public static void printAll(int[] arr){
         String temp = "";
         for(int a : arr){

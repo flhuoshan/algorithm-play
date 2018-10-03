@@ -17,7 +17,6 @@ public class MergeSortB2T implements Sorter {
            for( int i = 0; i + sz < n; i += sz + sz){
                merge(a, i, i + sz -1, min(i +sz +sz -1, n-1));
            }
-
        }
     }
     // arr[l...mid]和arr[mid+1...r]两部分进行归并

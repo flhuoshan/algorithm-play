@@ -1,3 +1,5 @@
+package com.flcoder.algorithm;
+
 import com.flcoder.algorithm.Utils;
 
 public class SortAlgorithm {
