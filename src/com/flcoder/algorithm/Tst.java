@@ -1,6 +1,9 @@
-import java.util.Arrays;
+package com.flcoder.algorithm;
 
 public class Tst{
+    static{
+        System.out.println("static");
+    }
     int a,b;
     public Tst(int a, int b){
         this.a = a;
@@ -29,20 +32,23 @@ public class Tst{
     public static void main(String[] args){
 
 
-        Tst t1 = new Tst(1,2);
-        Tst t2 = new Tst(3,4);
+//        Tst t1 = new Tst(1,2);
+//        Tst t2 = new Tst(3,4);
+//
+//        swap(t1, t2);
+//
+//        System.out.println(123);
+//
+//        int a = 1, b = 2;
+//        swap(a, b);
+//        System.out.println(a);
+//
+//        Integer c = 3, d = 4;
+//        swap1(c, d);
+//        System.out.println(c);
+//        Random random = new Random(System.currentTimeMillis());
+//        System.out.println(random.nextInt(1));
 
-        swap(t1, t2);
-
-        System.out.println(123);
-
-        int a = 1, b = 2;
-        swap(a, b);
-        System.out.println(a);
-
-        Integer c = 3, d = 4;
-        swap1(c, d);
-        System.out.println(c);
 
 
 

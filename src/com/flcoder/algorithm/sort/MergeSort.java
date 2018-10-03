@@ -1,7 +1,5 @@
 package com.flcoder.algorithm.sort;
 
-import com.flcoder.algorithm.Utils;
-
 /**
  * 使用递归的，自顶向下的归并排序，O(nlogn)
  */
@@ -13,6 +11,7 @@ public class MergeSort implements Sorter {
 
     //    递归使用归并排序，对arr[l...r]的范围进行排序
     private void mergeSort(Comparable[] a, int l, int r) {
+
         if (l >= r) {
             return;
         }

@@ -19,6 +19,20 @@ public class Utils {
         }
         return generatedArray;
     }
+    public static Comparable[] generateNearlyOrderedArray(int length, int swapTimes){
+        Comparable[] generatedArray = new Comparable[length];
+        for(int i=0; i < length; i++){
+            generatedArray[i] = i;
+        }
+        Random random = new Random(System.currentTimeMillis());
+        for(int j = 0; j < swapTimes; j++){
+            int left = random.nextInt(length);
+            int right = random.nextInt(length);
+            Utils.swap(generatedArray, left, right);
+        }
+        return generatedArray;
+    }
+
 
     public static Comparable[] generateNearlyOrderedArray(int length, int unorderedSize){
         Comparable[] generatedArray = new Comparable[length];

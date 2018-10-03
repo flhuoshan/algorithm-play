@@ -22,5 +22,14 @@ public class SortClient {
 
         proxy = new SortProxy(new MergeSortB2T());
         proxy.sort(Utils.copyAnArray(arr));
+
+        proxy = new SortProxy(new QuickSort());
+        proxy.sort(Utils.copyAnArray(arr));
+
+        proxy = new SortProxy(new DoubleQuickSort());
+        proxy.sort(Utils.copyAnArray(arr));
+
+        proxy = new SortProxy(new TripleQuickSort());
+        proxy.sort(Utils.copyAnArray(arr));
     }
 }
